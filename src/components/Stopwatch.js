@@ -92,7 +92,7 @@ const Stopwatch = () => {
     const hour = `${Math.floor(time / 3600)}`.padStart(2, "0");
     return (
       <>
-        <Typography variant="h2">{[hour, min, sec].join(" : ")}</Typography>
+        <Typography variant="h1">{[hour, min, sec].join(":")}</Typography>
         <Box className={classes.labelTime}>
           {["hr", "min", "sec"].map((unit) => (
             <Typography key={unit} vairant="overline">
