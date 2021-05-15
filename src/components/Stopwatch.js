@@ -87,7 +87,7 @@ const Stopwatch = () => {
   const intervalRef = useRef(0);
 
   const formatTime = () => {
-    const sec = `${Math.floor(time)}`.padStart(2, "0");
+    const sec = `${Math.floor(time) % 60}`.padStart(2, "0");
     const min = `${Math.floor(time / 60) % 60}`.padStart(2, "0");
     const hour = `${Math.floor(time / 3600)}`.padStart(2, "0");
     return (
